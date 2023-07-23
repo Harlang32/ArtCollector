@@ -30,8 +30,7 @@ import { fetchQueryResultsFromTermAndValue } from '../api';
  *  - call setIsLoading, set it to false
  */
 const Searchable = ({searchTerm, searchValue, setIsLoading, setSearchResults}) => {
-  return 
-    <span className="content">
+  return <span className="content">
       <a href="#" onClick={async (event) => {
         event.preventDefault();
        setIsLoading(true)
@@ -230,7 +229,7 @@ const Feature = ({ featuredResult, setSearchResults, setIsLoading }) => {
                 ) : null}
               </span>
             );
-          })}{" "}
+          })}
         </section>
       </div>
     </main>
